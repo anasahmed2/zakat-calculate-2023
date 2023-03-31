@@ -1,0 +1,159 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+.head {
+    text-align: center;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width: 1112px) {
+    .head {
+        background-image: url(../images/background-by-size-medium.png);
+    }
+}@media screen and (max-width: 400px) {
+    .head {
+        background-image: url(../images/background-by-size.png);
+    }
+}
+.head>h3 {
+    text-shadow: 2px 2px black;
+    margin-top: 0px;
+    padding-top: 20px;
+    color: #bfac92;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.head>h1 {
+    text-shadow: 2px 2px black;
+    margin-top: 0px;
+    padding-top: 40px;
+    color: #bfac92;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+
+}
+.head1>h3 {
+    text-shadow: 2px 2px black;
+    margin-top: 0px;
+    color: #bfac92;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+/* === input style ===*/
+
+
+.input-group {
+    margin-top: 50px;
+}
+
+.input {
+    color: #bfac92;
+    text-decoration: none;
+    max-width: 300px;
+    height: 44px;
+    background-color: #1c1b20ab;
+    text-align: center;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 22px;
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px #bfac92;
+}
+
+.label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ab8243;
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+    text-shadow: 2px 2px black;
+
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+    outline: none;
+    border-color: #79736b;
+}
+
+.input-group:hover .label,
+.input:focus {
+    color: #bfac92;
+
+}
+
+/* === button style ===*/
+
+.btn {
+    margin-top: 50px;
+
+}
+
+.button {
+    margin: 0;
+    height: auto;
+    background: #1c1b2091;
+    padding: 0;
+    cursor:pointer;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: #ffffff99;
+    --animation-color: #ab8243;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.copy>h3 {
+    text-shadow: 2px 2px black;
+    margin-top: 40px;
+    color: #bfac92;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
